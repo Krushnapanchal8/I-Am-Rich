@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_Am_Rich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-FN-Ji2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfI-ju-6zk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="242.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6f-Bg-sYl">
+                                                <rect key="frame" x="127" y="97" width="160.5" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="F6f-Bg-sYl" firstAttribute="centerY" secondItem="XfI-ju-6zk" secondAttribute="centerY" id="10a-sK-E92"/>
+                                            <constraint firstItem="F6f-Bg-sYl" firstAttribute="centerX" secondItem="XfI-ju-6zk" secondAttribute="centerX" id="SVJ-HN-vZm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1e7-Su-baN">
+                                        <rect key="frame" x="0.0" y="243.5" width="414" height="574.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="r2z-9Y-12O">
+                                                <rect key="frame" x="67" y="177" width="280" height="220"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="3IH-jQ-W82"/>
+                                                    <constraint firstAttribute="height" constant="220" id="EvY-6j-kT9"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="r2z-9Y-12O" firstAttribute="centerY" secondItem="1e7-Su-baN" secondAttribute="centerY" id="6jv-Em-gjc"/>
+                                            <constraint firstItem="r2z-9Y-12O" firstAttribute="centerX" secondItem="1e7-Su-baN" secondAttribute="centerX" id="Vhc-Ti-Zz6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tw9-FN-Ji2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7P0-UV-LOP"/>
+                            <constraint firstItem="tw9-FN-Ji2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JeO-Qb-SCl"/>
+                            <constraint firstItem="tw9-FN-Ji2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S42-NZ-BoD"/>
+                            <constraint firstItem="tw9-FN-Ji2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yrl-NP-QAQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="164"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="diamond" width="343" height="251"/>
+    </resources>
+</document>
